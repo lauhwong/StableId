@@ -10,14 +10,14 @@ dependencies {
     implementation 'org.aspectj:aspectjtools:1.8.9'
 }
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: uri('../pluginRepo'))
-            pom.version = "1.0.0"
-            pom.artifactId = "inject"
-            pom.groupId = "com.miracles.plugin"
-        }
-    }
-}
-
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: uri('../pluginRepo'))
+//            pom.version = "1.0.0"
+//            pom.artifactId = "inject"
+//            pom.groupId = "com.miracles.plugin"
+//        }
+//    }
+//}
+apply from:rootProject.file("gradle/gradle-mvn-push.gradle")
