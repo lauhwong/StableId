@@ -13,7 +13,7 @@ repositories {
         }
     }
 dependencies {
-        classpath 'com.github.lauhwong:stableid:1.0.0-SNAPSHOT'
+        classpath 'com.github.lauhwong:stableid:1.0.3-SNAPSHOT'
     }
 ```
 2.在application插件中引入stable-id插件。

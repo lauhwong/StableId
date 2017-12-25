@@ -13,10 +13,10 @@ dependencies {
 //uploadArchives {
 //    repositories {
 //        mavenDeployer {
-//            repository(url: uri('../pluginRepo'))
-//            pom.version = "1.0.0"
-//            pom.artifactId = "inject"
-//            pom.groupId = "com.miracles.plugin"
+//            repository(url: uri('../repo'))
+//            pom.version = "1.0.3-SNAPSHOT"
+//            pom.artifactId = "stableid"
+//            pom.groupId = "com.github.lauhwong"
 //        }
 //    }
 //}

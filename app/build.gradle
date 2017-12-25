@@ -16,6 +16,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "mm"
+    productFlavors {
+        a {
+            applicationId "com.miracle.stableid.a"
+        }
+        b {
+            applicationId "com.miracle.stableid.b"
+        }
+    }
+}
+
+project.android.productFlavors.each { flavor ->
+    def name = flavor.name
+    flavor.applicationId = "${flavor.applicationId}.$name"
 }
 //如果不配置该选项默认选择values/public.xml,否则按照该配置
 //stableXmlConfig{
