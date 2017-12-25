@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.miracles.stableid'
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -17,7 +17,10 @@ android {
         }
     }
 }
-
+//如果不配置该选项默认选择values/public.xml,否则按照该配置
+//stableXmlConfig{
+//    inXmlPath file("public.xml").absolutePath
+//}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'

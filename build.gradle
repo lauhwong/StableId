@@ -3,11 +3,15 @@
 buildscript {
     
     repositories {
+        maven{
+            url "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
         google()
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.github.lauhwong:stableid:1.0.0-SNAPSHOT'
     }
 }
 
